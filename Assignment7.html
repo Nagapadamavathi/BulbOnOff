@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+        #bulb {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+  </style>
+    </head>
+    <body>
+        <img id="bulb" src="Images/b2.jpg" onclick="toggleBulb()" alt="Bulb">
+
+        <button onclick="toggleBulb()">Toggle Bulb</button>
+
+<script>
+function toggleBulb() {
+    var bulb = document.getElementById("bulb");
+    if (bulb.src.endsWith("Images/b2.jpg")) {
+      bulb.src = "Images/b3.jpg";
+    } else {
+      bulb.src = "Images/b2.jpg";
+    }
+  }
+  </script>
+    </body>
+</html>
